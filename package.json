@@ -1,0 +1,29 @@
+{
+  "name": "format-json",
+  "version": "1.0.3",
+  "description": "Quick tool that formats and displays the JSON.",
+  "author": "Claude Abounegm",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "format-json": "./bin/format-json"
+  },
+  "scripts": {
+    "build": "npm install && npm run tools:build",
+    "tools:build": "pkg . --targets node10-linux --out-dir ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claude-abounegm/format-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/claude-abounegm/format-json/issues"
+  },
+  "homepage": "https://github.com/claude-abounegm/format-json#readme",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "pkg": "^4.3.7"
+  }
+}
