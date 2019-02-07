@@ -1,13 +1,28 @@
 # format-json
 
-## Install
+Quick tool that formats and displays the JSON.
 
-`curl -s https://raw.githubusercontent.com/claude-abounegm/format-json/master/install.sh | bash -`
+## Install with Node.js Dependency
+
+```
+npm install -g git+https://github.com/claude-abounegm/format-json.git
+```
+
+## Install without Node Dependency
+
+```bash
+curl -s https://raw.githubusercontent.com/claude-abounegm/format-json/master/install.sh | bash -
+```
 
 ## Usage
 
-`format-json - < file.json`
+```bash
+# Read from File
+format-json file.json
 
-`cat file.json | format-json -`
+# Read from STDIN #1
+cat file.json | format-json -
 
-`format-json file.json`
+# Read from STDIN #2
+format-json - < file.json
+```
